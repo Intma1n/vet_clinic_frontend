@@ -1,6 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/regexes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validation/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2G0FOGa3KAZj6uzbjTKRsnF52Dh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/r0i4/player_project" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\User\Eva Mulenson(course DB)\frontend\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="C:\Users\User\Eva Mulenson(course DB)\frontend\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Eva Mulenson(course DB)\frontend\src\pages\auth-page\SignIn\components\SignInForm" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="" />
+      <created>1665517561001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665517561001</updated>
+      <workItem from="1665517562088" duration="1434000" />
+      <workItem from="1665520038051" duration="1890000" />
+      <workItem from="1665584947257" duration="150000" />
+      <workItem from="1665597447625" duration="601000" />
+      <workItem from="1665657288159" duration="594000" />
+      <workItem from="1665692411548" duration="2485000" />
+      <workItem from="1665702783991" duration="1189000" />
+      <workItem from="1665741847172" duration="16000" />
+      <workItem from="1665933477984" duration="305000" />
+      <workItem from="1665934018149" duration="1860000" />
+      <workItem from="1666033182030" duration="1790000" />
+      <workItem from="1666114107240" duration="4791000" />
+      <workItem from="1666215651250" duration="7887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
