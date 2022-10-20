@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/regexes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validation/validation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/style.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -98,8 +91,16 @@
       <workItem from="1665934018149" duration="1860000" />
       <workItem from="1666033182030" duration="1790000" />
       <workItem from="1666114107240" duration="4791000" />
-      <workItem from="1666215651250" duration="7887000" />
+      <workItem from="1666215651250" duration="8186000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1666223901130</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666223901130</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +116,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

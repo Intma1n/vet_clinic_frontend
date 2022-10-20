@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC } from 'react';
 import { SignInProps } from '../../types';
 
 import {
@@ -10,21 +10,18 @@ import {
 } from './style';
 import { validatePhoneNumber } from '../../../../../utils/validation/validation';
 import { Controller, useForm } from 'react-hook-form';
-interface initialFormState {
-  name: string;
-  surname: string;
-  phoneNumber: string;
-}
+import {IInitialFormState} from "./types";
+
 const defaultValues = { name: '', surname: '', phoneNumber: '' };
 const SignInForm: FC<SignInProps> = () => {
 
-  const { handleSubmit, control, getValues } = useForm<initialFormState>(
+  const { handleSubmit, control, getValues } = useForm<IInitialFormState>(
     {
       defaultValues,
     }
   );
 
-  const onSubmitButton = (formData: initialFormState) => {
+  const onSubmitButton = (formData: IInitialFormState) => {
     console.log(formData);
   };
   return (
