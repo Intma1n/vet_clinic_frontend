@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="initial commit">
-      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/style.ts" afterDir="false" />
-    </list>
+    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="added types fixed styles" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +87,7 @@
       <workItem from="1665934018149" duration="1860000" />
       <workItem from="1666033182030" duration="1790000" />
       <workItem from="1666114107240" duration="4791000" />
-      <workItem from="1666215651250" duration="8186000" />
+      <workItem from="1666215651250" duration="8489000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666223901130</created>
@@ -100,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666223901130</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added types fixed styles">
+      <created>1666224329623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666224329623</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +122,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="added types fixed styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="added types fixed styles" />
   </component>
 </project>
