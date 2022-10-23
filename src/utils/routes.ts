@@ -1,7 +1,7 @@
 export const routes = {
   clinicCommentPage: 'home',
-  signIn: 'sign-in',
-  signUp: 'sign-up',
+  signIn: '/sign-in',
+  signUp: '/sign-up',
   adminPage: 'admin',
   clientPage: 'client/:id',
   directorPage: 'director',

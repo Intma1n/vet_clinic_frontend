@@ -1,9 +1,10 @@
 export interface SignInFormProps {
-    smth?: any;
+  smth?: any;
 }
 
 export interface IInitialFormState {
-    name: string;
-    surname: string;
-    phoneNumber: string;
+  name: string;
+  surname: string;
+  phoneNumber: string;
+  password: string;
 }

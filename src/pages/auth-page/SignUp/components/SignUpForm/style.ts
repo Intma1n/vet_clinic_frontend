@@ -1,7 +1,13 @@
-import { Button, FormControl, OutlinedInput, styled, TextField } from '@mui/material';
-import { Colors } from '../../../../../assets/colors';
+import {
+  Button,
+  FormControl,
+  Select,
+  styled,
+  TextField,
+} from '@mui/material';
+import {Colors} from "../../../../../assets/colors";
 
-export const StyledSignInFormWrapper = styled('div')`
+export const StyledSignUpFormWrapper = styled('div')`
   width: 50%;
   display: flex;
   margin: auto;
@@ -11,7 +17,7 @@ export const StyledSignInFormWrapper = styled('div')`
   justify-content: center;
   align-items: center;
   a {
-    color: ${Colors.DARK_BLUE};
+    color:${Colors.DARK_BLUE};
     text-decoration: none;
     :active {
       color: ${Colors.BLUE};
@@ -19,7 +25,7 @@ export const StyledSignInFormWrapper = styled('div')`
   }
 `;
 
-export const StyledSignInForm = styled('form')`
+export const StyledSignUpForm = styled('form')`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -28,12 +34,6 @@ export const StyledSignInForm = styled('form')`
 `;
 
 export const StyledInput = styled(TextField)`
-  margin: 10px;
-  width: 50%;
-  height: auto;
-`;
-
-export const StyledPasswordInput = styled(OutlinedInput)`
   margin: 10px;
   width: 50%;
   height: auto;
@@ -51,7 +51,14 @@ export const StyledFormHeaderText = styled('h1')`
   margin: auto;
 `;
 
-export const StyledChangeAuthText = styled('h3')`
-  text-decoration: none;
-  cursor: pointer;
+export const StyledSelect = styled(Select)`
+  margin: 10px;
+  width: 50%;
+  height: auto;
+`;
+
+export const StyledSelectFormControl = styled(FormControl)`
+  margin: 10px;
+  width: 50%;
+  height: auto;
 `;

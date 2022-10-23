@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="added types fixed styles" />
+    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="added types fixed styles">
+      <change afterPath="$PROJECT_DIR$/src/assets/colors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/style.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth-page/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/regexes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/regexes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/validation/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validation/validation.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +68,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Eva Mulenson(course DB)\frontend\src\pages\auth-page\SignIn\components\SignInForm" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Eva Mulenson(course DB)\frontend\src\pages\auth-page\SignUp\components\SignUpForm" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -87,7 +107,11 @@
       <workItem from="1665934018149" duration="1860000" />
       <workItem from="1666033182030" duration="1790000" />
       <workItem from="1666114107240" duration="4791000" />
-      <workItem from="1666215651250" duration="8489000" />
+      <workItem from="1666215651250" duration="9223000" />
+      <workItem from="1666301570445" duration="61000" />
+      <workItem from="1666307814832" duration="1190000" />
+      <workItem from="1666346402547" duration="57000" />
+      <workItem from="1666448594095" duration="13253000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666223901130</created>
@@ -103,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666224329623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added types fixed styles">
+      <created>1666224346672</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666224346672</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
