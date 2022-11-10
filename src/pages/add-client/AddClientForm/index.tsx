@@ -1,6 +1,6 @@
-import { FC, useEffect, useState } from 'react';
-import { SignInProps } from '../../types';
-
+import { Controller, useForm } from 'react-hook-form';
+import { IInitialFormState } from './types';
+import { useState } from 'react';
 import {
   StyledButton,
   StyledChangeAuthText,
@@ -8,123 +8,41 @@ import {
   StyledInput,
   StyledSignInForm,
   StyledSignInFormWrapper,
-} from './style';
+} from '../../auth-page/SignIn/components/SignInForm/style';
 import {
   validateName,
   validatePassword,
   validatePhoneNumber,
-} from '../../../../../utils/validation/validation';
-import { Controller, useForm } from 'react-hook-form';
-import { IInitialFormState } from './types';
-import { FormControlLabel, IconButton, Radio, RadioGroup } from '@mui/material';
+} from '../../../utils/validation/validation';
+import { IconButton } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import { Link, useNavigate } from 'react-router-dom';
-import { routes } from '../../../../../constants/routes';
-import { IUserType } from '../../../SignUp/components/SignUpForm/types';
-import {
-  adminAuth,
-  clientAuth,
-  directorAuth,
-  employeeAuth,
-  getClients,
-  getEmployees,
-} from '../../../../../utils/api';
-import { IClient, IEmployee } from '../../../../../constants/commonInterfaces';
-
+import { clientRegister } from '../../../utils/api';
 const defaultValues = {
   firstname: '',
   lastname: '',
   phone_number: '',
   password: '',
 };
-const SignInForm: FC<SignInProps> = () => {
+const AddClientForm = () => {
   const { handleSubmit, control, getValues } = useForm<IInitialFormState>({
     defaultValues,
   });
-  const [employees, setEmployees] = useState<IEmployee[]>([]);
-  const [clients, setClients] = useState<IClient[]>([]);
-
-  useEffect(() => {
-    getClients().then((data) => {
-      console.log(data.data);
-      setClients(data.data);
-    });
-  }, []);
-
-  useEffect(() => {
-    getEmployees().then((data) => {
-      setEmployees(data.data);
-      console.log(data.data);
-    });
-  }, []);
-  const navigate = useNavigate();
-  const [userType, setUserType] = useState<IUserType>({ userType: 'director' });
-
-  const handleSetUserType = (userType: IUserType) => {
-    setUserType(userType);
-  };
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
   const handleShowPassword = () => {
     setIsPasswordVisible(!isPasswordVisible);
   };
   const onSubmitButton = (formData: IInitialFormState) => {
+    console.log(formData);
     const { firstname, lastname, phone_number, password } = formData;
-    if (userType.userType === 'director') {
-      const data = { firstname, lastname, phone_number, password };
-      directorAuth(data).then((data) => {
-        console.log(data);
-        localStorage.setItem('userType', 'director');
-        localStorage.setItem('id', data.data.stff_id);
-        navigate(`/main/director`, { replace: true });
-      });
-    }
-    if (userType.userType === 'client') {
-      const data = { firstname, lastname, phone_number, password };
-      clientAuth(data).then((data) => {
-        console.log(data);
-        const currentClient = clients.filter(
-            (client) =>
-                //@ts-ignore
-                client.firstname === firstname && client.lastname === lastname
-        );
-        localStorage.setItem('userType', 'client');
-        //@ts-ignore
-        localStorage.setItem('id', currentClient[0].client_id);
-        //@ts-ignore
-        navigate(`/main/client`, { replace: true });
-      });
-    }
-    if (userType.userType === 'admin') {
-      const data = { firstname, lastname, phone_number, password };
-      adminAuth(data).then((data) => {
-        console.log(data);
-        localStorage.setItem('userType', 'admin');
-        localStorage.setItem('id', data.data.employee_id);
-        navigate(`/main/admin`, { replace: true });
-      });
-    }
-    if (userType.userType === 'employee') {
-      const data = { firstname, lastname, phone_number, password };
-      employeeAuth(data).then((data) => {
-        console.log(data);
-        const currentEmployee = employees.filter(
-          (employee) =>
-            //@ts-ignore
-            employee.first_name === firstname && employee.last_name === lastname
-        );
-        console.log('currentEmployee', currentEmployee);
-        localStorage.setItem('userType', currentEmployee[0].position);
-        localStorage.setItem('id', data.data.stff_id);
-        navigate(`/main/${currentEmployee[0].position}/${data.data.employee_id}`, {
-          replace: true,
-        });
-      });
-    }
+    const data = { firstname, lastname, phone_number, password };
+    clientRegister(data).then((data) => {
+      console.log(data);
+    });
   };
 
   return (
     <StyledSignInFormWrapper>
-      <StyledFormHeaderText>Войдите в систему</StyledFormHeaderText>
+      <StyledFormHeaderText>Зарегистрировать клиента</StyledFormHeaderText>
       <StyledSignInForm onSubmit={handleSubmit(onSubmitButton)}>
         <Controller
           rules={{
@@ -231,41 +149,13 @@ const SignInForm: FC<SignInProps> = () => {
             />
           )}
         />
-        <RadioGroup defaultValue="director" row>
-          <FormControlLabel
-            onClick={() => handleSetUserType({ userType: 'employee' })}
-            value="employee"
-            control={<Radio />}
-            label="Сотрудник"
-          />
-          <FormControlLabel
-            onClick={() => handleSetUserType({ userType: 'client' })}
-            value="client"
-            control={<Radio />}
-            label="Клиент"
-          />
-          <FormControlLabel
-            onClick={() => handleSetUserType({ userType: 'director' })}
-            value="director"
-            control={<Radio />}
-            label="Директор"
-          />
-          <FormControlLabel
-            onClick={() => handleSetUserType({ userType: 'admin' })}
-            value="admin"
-            control={<Radio />}
-            label="Админ"
-          />
-        </RadioGroup>
+
         <StyledButton type="submit" size="large" variant="contained">
-          Войти
+          Зарегистрировать
         </StyledButton>
       </StyledSignInForm>
-      <Link replace to={routes.signUp}>
-        <StyledChangeAuthText>Зарегистрироваться</StyledChangeAuthText>
-      </Link>
     </StyledSignInFormWrapper>
   );
 };
 
-export default SignInForm;
+export default AddClientForm;

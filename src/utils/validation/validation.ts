@@ -3,7 +3,7 @@ import {
   NUMBERS_REGEX,
   PASSWORD_REGEX,
   PHONE_NUMBER_REGEX,
-} from '../regexes';
+} from '../../constants/regexes';
 
 export const validatePhoneNumber = (phoneNumber: string) => {
   return Boolean(phoneNumber.match(PHONE_NUMBER_REGEX));

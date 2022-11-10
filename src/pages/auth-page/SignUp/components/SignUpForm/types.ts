@@ -1,13 +1,13 @@
 export interface IInitialFormState {
-  name: string;
-  surname: string;
-  phoneNumber: string;
+  firstname: string;
+  lastname: string;
+  phone_number: string;
   password: string;
   position?: string;
   age?: string;
   stage?: string;
   salary?: string;
-  documentId?: string;
+  document_id?: string;
 }
 
 export interface IUserType {

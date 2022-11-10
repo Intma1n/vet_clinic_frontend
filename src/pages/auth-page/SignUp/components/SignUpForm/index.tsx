@@ -30,13 +30,14 @@ import {
   Select,
 } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import { Link } from 'react-router-dom';
-import { routes } from '../../../../../utils/routes';
+import { Link, useNavigate } from 'react-router-dom';
+import { routes } from '../../../../../constants/routes';
+import { clientRegister, employeeRegister } from '../../../../../utils/api';
 
 const defaultValues = {
-  name: '',
-  surname: '',
-  phoneNumber: '',
+  firstname: '',
+  lastname: '',
+  phone_number: '',
   password: '',
   position: '',
   age: '',
@@ -48,6 +49,7 @@ const SignUpForm: FC<ISignUpProps> = () => {
   const { handleSubmit, control, getValues, register } = useForm<IInitialFormState>({
     defaultValues,
   });
+  const navigate = useNavigate();
   const [isPasswordVisible, setIsPasswordVisible] = useState<boolean>(false);
   const [userType, setUserType] = useState<IUserType>({ userType: 'director' });
 
@@ -60,8 +62,51 @@ const SignUpForm: FC<ISignUpProps> = () => {
   };
 
   const onSubmitButton = (formData: IInitialFormState) => {
-    console.log(userType.userType);
-    console.log(formData);
+    const {
+      firstname,
+      lastname,
+      phone_number,
+      password,
+      age,
+      stage,
+      salary,
+      position,
+      document_id,
+    } = formData;
+    if (userType.userType === 'client') {
+      //@ts-ignore
+      const data = { firstname, lastname, phone_number, password };
+      clientRegister(data).then((data) => {
+        console.log(data);
+        localStorage.setItem('userType', 'client');
+        localStorage.setItem('id', data.data.client_id);
+        navigate(`/main/client/${data.data.client_id}`, { replace: true });
+      });
+    }
+    if (userType.userType === 'employee') {
+      //@ts-ignore
+      const data = {
+        firstname,
+        lastname,
+        phone_number,
+        password,
+        sex: 'female',
+        age,
+        stage,
+        salary,
+        position,
+        document_id,
+      };
+      //@ts-ignore
+      employeeRegister(data).then((data) => {
+        console.log(data);
+        localStorage.setItem('userType', data.data.position);
+        localStorage.setItem('id', data.data.employee_id);
+        if (data.data.position) {
+          navigate(`/main/${data.data.position}/${data.data.employee_id}`);
+        }
+      });
+    }
   };
 
   return (
@@ -72,7 +117,7 @@ const SignUpForm: FC<ISignUpProps> = () => {
           rules={{
             required: true,
             validate: () => {
-              return validateName(getValues('name'));
+              return validateName(getValues('firstname'));
             },
           }}
           control={control}
@@ -84,24 +129,24 @@ const SignUpForm: FC<ISignUpProps> = () => {
               type="text"
               label="Имя"
               helperText={
-                (getValues('name').length > 0 &&
-                  !validateName(getValues('name')) &&
+                (getValues('firstname').length > 0 &&
+                  !validateName(getValues('firstname')) &&
                   'Неправильный формат имени') ||
                 (error && 'Поле обязательно')
               }
             />
           )}
-          name={'name'}
+          name={'firstname'}
         />
         <Controller
           rules={{
             required: true,
             validate: () => {
-              return validateName(getValues('surname'));
+              return validateName(getValues('lastname'));
             },
           }}
           control={control}
-          name={'surname'}
+          name={'lastname'}
           render={({ field: { onChange, value }, fieldState: { error } }) => (
             <StyledInput
               error={!!error}
@@ -109,8 +154,8 @@ const SignUpForm: FC<ISignUpProps> = () => {
               value={value}
               label="Фамилия"
               helperText={
-                (getValues('surname').length > 0 &&
-                  !validateName(getValues('surname')) &&
+                (getValues('lastname').length > 0 &&
+                  !validateName(getValues('lastname')) &&
                   'Неправильный формат фамилии') ||
                 (error && 'Поле обязательно')
               }
@@ -119,11 +164,11 @@ const SignUpForm: FC<ISignUpProps> = () => {
         />
         <Controller
           control={control}
-          name={'phoneNumber'}
+          name={'phone_number'}
           rules={{
             required: true,
             validate: () => {
-              return validatePhoneNumber(getValues('phoneNumber'));
+              return validatePhoneNumber(getValues('phone_number'));
             },
           }}
           render={({ field: { onChange, value }, fieldState: { error } }) => (
@@ -133,8 +178,8 @@ const SignUpForm: FC<ISignUpProps> = () => {
               label="Номер телефона"
               error={!!error}
               helperText={
-                (getValues('phoneNumber').length > 0 &&
-                  !validatePhoneNumber(getValues('phoneNumber')) &&
+                (getValues('phone_number').length > 0 &&
+                  !validatePhoneNumber(getValues('phone_number')) &&
                   'Неправильный формат телефона') ||
                 (error && 'Поле обязательно')
               }
@@ -187,7 +232,7 @@ const SignUpForm: FC<ISignUpProps> = () => {
                   <InputLabel>Должность</InputLabel>
                   <Select fullWidth value={value} label="Должность" onChange={onChange}>
                     <MenuItem value={'doctor'}>Доктор</MenuItem>
-                    <MenuItem value={'nurse'}>Интерн</MenuItem>
+                    <MenuItem value={'intern'}>Интерн</MenuItem>
                   </Select>
                 </StyledSelectFormControl>
               )}
@@ -254,7 +299,7 @@ const SignUpForm: FC<ISignUpProps> = () => {
                 required: true,
                 validate: () => {
                   //@ts-ignore
-                  return validateDocumentId(getValues('documentId'));
+                  return validateDocumentId(getValues('document_id'));
                 },
               }}
               control={control}
@@ -266,17 +311,17 @@ const SignUpForm: FC<ISignUpProps> = () => {
                   type="number"
                   label="Номер документа"
                   helperText={
-                    (getValues('documentId') &&
+                    (getValues('document_id') &&
                       //@ts-ignore
-                      getValues('documentId').length > 0 &&
+                      getValues('document_id').length > 0 &&
                       //@ts-ignore
-                      !validateDocumentId(getValues('documentId')) &&
+                      !validateDocumentId(getValues('document_id')) &&
                       'Введите действительный номер документа') ||
                     (error && 'Поле обязательно')
                   }
                 />
               )}
-              name={'documentId'}
+              name={'document_id'}
             />
             <Controller
               rules={{
@@ -298,18 +343,6 @@ const SignUpForm: FC<ISignUpProps> = () => {
           </>
         )}
         <RadioGroup defaultValue="director" row>
-          <FormControlLabel
-            onClick={() => handleSetUserType({ userType: 'director' })}
-            value="director"
-            control={<Radio />}
-            label="Директор"
-          />
-          <FormControlLabel
-            onClick={() => handleSetUserType({ userType: 'admin' })}
-            value="admin"
-            control={<Radio />}
-            label="Админ"
-          />
           <FormControlLabel
             onClick={() => handleSetUserType({ userType: 'employee' })}
             value="employee"
