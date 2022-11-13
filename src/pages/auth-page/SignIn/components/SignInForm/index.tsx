@@ -115,7 +115,7 @@ const SignInForm: FC<SignInProps> = () => {
         console.log('currentEmployee', currentEmployee);
         localStorage.setItem('userType', currentEmployee[0].position);
         localStorage.setItem('id', data.data.stff_id);
-        navigate(`/main/${currentEmployee[0].position}/${data.data.employee_id}`, {
+        navigate(`/main/${currentEmployee[0].position}`, {
           replace: true,
         });
       });

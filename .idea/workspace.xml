@@ -1,68 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="added types fixed styles">
-      <change afterPath="$PROJECT_DIR$/src/assets/mockData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnalysList/AnalysItem/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnalysList/AnalysItem/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnalysList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnalysList/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnimalList/AnimalItem/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnimalList/AnimalItem/procedureReducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnimalList/AnimalItem/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnimalList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AnimalList/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ClientList/ClientItem/ClientItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ClientList/ClientItem/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ClientList/ClientList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmployeeList/EmployeeItem/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmployeeList/EmployeeItem/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/EmployeeList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProcedureList/ProceduresItem/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProcedureList/ProceduresItem/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProcedureList/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ProcedureList/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/commonInterfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-animal/AddAnimalForm/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-animal/AddAnimalForm/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-animal/AddAnimalForm/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-animal/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-client/AddClientForm/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-client/AddClientForm/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-client/AddClientForm/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-client/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/add-employee/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/admin-page/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/client-page/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/clients/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/clients/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/clients/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/clinic-comments/components/AddCommentForm/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/clinic-comments/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/director-page/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/director-page/styles.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/doctor-page/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/employees/AddEmployeeForm/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/employees/AddEmployeeForm/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/employees/AddEmployeeForm/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/employees/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/employees/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/main/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/main/style.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/nurse-page/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/update-employee/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/rootReducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
+    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="keep changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AnalysList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnalysList/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AnimalList/AnimalItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnimalList/AnimalItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProcedureList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProcedureList/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignIn/components/SignInForm/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/auth-page/SignUp/components/SignUpForm/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/regexes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/regexes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validation/validation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validation/validation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/doctor-page/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/doctor-page/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +37,9 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -184,7 +132,9 @@
       <workItem from="1667827159949" duration="482000" />
       <workItem from="1667869076320" duration="597000" />
       <workItem from="1667904781279" duration="129000" />
-      <workItem from="1668029238493" duration="20244000" />
+      <workItem from="1668029238493" duration="21201000" />
+      <workItem from="1668297775165" duration="2915000" />
+      <workItem from="1668345456916" duration="1375000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666223901130</created>
@@ -207,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666224346672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="keep changes">
+      <created>1668103853996</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668103853997</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="added types fixed styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="added types fixed styles" />
+    <MESSAGE value="keep changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="keep changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

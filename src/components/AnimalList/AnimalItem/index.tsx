@@ -24,6 +24,7 @@ import {
   addAnalysis,
   addProcedure,
   addTreatment,
+  getAnalyses,
   getDiagnosis,
   getTreatment,
 } from '../../../utils/api';

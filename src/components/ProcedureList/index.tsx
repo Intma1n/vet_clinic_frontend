@@ -15,7 +15,10 @@ const ProcedureList: FC<IProceduresList> = ({ animal_id }) => {
   useEffect(() => {
     getProcedures(animal_id)
       //@ts-ignore
-      .then((response) => setProcedures(response))
+      .then((response) => {
+        setProcedures(response.data.procedures);
+        console.log(response.data.procedures);
+      })
       .catch((error) => console.log(error));
   }, [animal_id]);
   console.log(
@@ -28,17 +31,15 @@ const ProcedureList: FC<IProceduresList> = ({ animal_id }) => {
   const proceduresArray =
     procedures.length > 0
       ? //@ts-ignore
-        procedures.map((procedure) =>
-          procedure.animal_id === animal_id ? (
-            <ProceduresItem
-              key={procedure.procedure_id}
-              procedure_id={procedure.procedure_id}
-              procedure_name={procedure.procedure_name}
-              // @ts-ignore
-              status={procedure.status}
-            />
-          ) : null
-        )
+        procedures.map((procedure) => (
+          <ProceduresItem
+            key={procedure.procedure_id}
+            procedure_id={procedure.procedure_id}
+            procedure_name={procedure.procedure_name}
+            // @ts-ignore
+            status={procedure.status}
+          />
+        ))
       : null;
   return (
     <Accordion>
