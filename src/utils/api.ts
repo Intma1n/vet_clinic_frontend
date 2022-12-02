@@ -156,7 +156,11 @@ export const patchAnalysis = async (data: IAnalysis, analysisId: string) => {
 };
 
 export const patchProcedure = async (data: IProcedure, procedureId: string) => {
-  return await axios.patch(`${API_MAIN_URL + apiRoutes.analyses}/${procedureId}`, data);
+  return await axios.put(`${API_MAIN_URL + apiRoutes.analyses}/${procedureId}`, data);
+};
+
+export const patchAnalys = async (data: { analys_status: string }, analysId: string) => {
+  return await axios.put(`${API_MAIN_URL + apiRoutes.analyzes}/${analysId}`, data);
 };
 
 export const patchEmployee = async (data: IEmployee) => {
