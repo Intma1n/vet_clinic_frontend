@@ -16,13 +16,14 @@ const apiRoutes = {
   analyses: '/analyses',
   diagnosis: '/diagnos',
   treatment: '/treatment',
-  setTreatment: 'set_treatment',
+  setTreatment: '/treatment',
   allClients: '/all_clients',
   clinicComments: '/clinic_comments',
   internToAnimal: '/intern_to_animal',
   doctorToAnimal: '/doctor_to_animal',
   internToDoctor: '/intern_to_doctor',
-  analyzes: '/analyzes',
+  analyzes: '/analyses',
+  deleteEmployee: '/delete_staff',
 };
 
 interface IEmployee {
@@ -69,8 +70,8 @@ export const addClient = async (data: IClient) => {
   return await axios.post(`${API_MAIN_URL + apiRoutes.clients}`, data);
 };
 
-export const addAnimal = async (data: IAnimal) => {
-  return await axios.post(`${API_MAIN_URL + apiRoutes.setAnimal}`, data);
+export const addAnimal = async (data: IAnimal, id:string) => {
+  return await axios.post(`${API_MAIN_URL + apiRoutes.animals}/${id}`, data);
 };
 
 export const addDiagnosis = async (data: IDiagnosis, animalId: string) => {
@@ -148,7 +149,7 @@ export const getNurses = async () => {
 };
 
 export const deleteEmployee = async (employeeId: string) => {
-  return await axios.delete(`${API_MAIN_URL + apiRoutes.employees}/${employeeId}`);
+  return await axios.delete(`${API_MAIN_URL + apiRoutes.deleteEmployee}/${employeeId}`);
 };
 
 export const patchAnalysis = async (data: IAnalysis, analysisId: string) => {

@@ -10,8 +10,8 @@ const ProceduresItem: FC<IProceduresItem> = ({
   return (
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <Typography>{procedure_name}</Typography>
-      <Typography style={{ color: status === 'appointed' ? 'red' : 'green' }}>
-        {status === 'appointed' ? 'Назначено' : 'Проведено'}
+      <Typography style={{ color: +status === 1 ? 'red' : 'green' }}>
+        {+status === 1 ? 'Назначено' : 'Проведено'}
       </Typography>
     </div>
   );

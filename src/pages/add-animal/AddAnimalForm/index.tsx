@@ -43,13 +43,12 @@ const AddAnimalForm = () => {
     const { client_id, animal_breed, animal_name, animal_type } = formData;
 
     const data = {
-      client_id: isClient ? localStorage.getItem('id') : client_id.toString(),
       animal_breed,
       animal_name,
       animal_type,
     };
     //@ts-ignore
-    addAnimal(data);
+    addAnimal(data, isClient ? localStorage.getItem('id') : client_id.toString());
   };
   const clientsArray =
     clients.length > 0

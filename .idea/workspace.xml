@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="fix procedures">
+    <list default="true" id="eb32d7a4-f2b7-4331-b313-4fa042563c53" name="Changes" comment="keep changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnalysList/AnalysItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnalysList/AnalysItem/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AnalysList/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AnalysList/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/nurse-page/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/nurse-page/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ProcedureList/ProceduresItem/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProcedureList/ProceduresItem/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/add-animal/AddAnimalForm/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/add-animal/AddAnimalForm/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +138,8 @@
       <workItem from="1668951771046" duration="1789000" />
       <workItem from="1668986346094" duration="2166000" />
       <workItem from="1669034519770" duration="1197000" />
-      <workItem from="1670016934066" duration="941000" />
+      <workItem from="1670016934066" duration="2838000" />
+      <workItem from="1670027073933" duration="5319000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1666223901130</created>
@@ -175,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668348853378</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="keep changes">
+      <created>1670018065979</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670018065979</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,9 +203,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="added types fixed styles" />
-    <MESSAGE value="keep changes" />
     <MESSAGE value="fix procedures" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix procedures" />
+    <MESSAGE value="keep changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="keep changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
