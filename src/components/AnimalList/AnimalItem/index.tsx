@@ -101,7 +101,10 @@ const AnimalItem: FC<IAnimalItem> = ({
         {/*  </Select>*/}
         {/*</FormControl>*/}
         <Typography>{'Порода: ' + animal_breed}</Typography>
-        {treatment && <Typography>{'Лечение ' + treatment}</Typography>}
+        {treatment &&
+          treatment.treatment.map((elem: any) => (
+            <Typography>{'Лечение ' + elem.treatment_name}</Typography>
+          ))}
         {diagnosys && <Typography>{'Диагноз ' + diagnosys}</Typography>}
         {localStorage.getItem('userType') === 'doctor' && (
           <div style={{ display: 'flex', flexDirection: 'column' }}>

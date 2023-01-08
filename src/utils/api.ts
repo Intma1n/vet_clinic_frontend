@@ -70,7 +70,7 @@ export const addClient = async (data: IClient) => {
   return await axios.post(`${API_MAIN_URL + apiRoutes.clients}`, data);
 };
 
-export const addAnimal = async (data: IAnimal, id:string) => {
+export const addAnimal = async (data: IAnimal, id: string) => {
   return await axios.post(`${API_MAIN_URL + apiRoutes.animals}/${id}`, data);
 };
 
@@ -156,8 +156,9 @@ export const patchAnalysis = async (data: IAnalysis, analysisId: string) => {
   return await axios.patch(`${API_MAIN_URL + apiRoutes.analyses}/${analysisId}`, data);
 };
 
-export const patchProcedure = async (data: IProcedure, procedureId: string) => {
-  return await axios.put(`${API_MAIN_URL + apiRoutes.analyses}/${procedureId}`, data);
+export const patchProcedure = async (status: number, procedureId: string) => {
+  const data = { status };
+  return await axios.put(`${API_MAIN_URL + apiRoutes.procedure}/${procedureId}`, data);
 };
 
 export const patchAnalys = async (data: { analys_status: string }, analysId: string) => {
